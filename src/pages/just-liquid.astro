@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro"
+import ARViewer from "../components/ARViewer.astro"
+---
+
+<Layout title="Just For Me">
+    <main class="min-h-screen bg-[#211C6B]">
+    
+        <ARViewer ar="just-for-me-liq" />
+        <div class=" bg-pink-500 font-black text-2xl flex justify-center rounded-md m-3 p-3 gap-2 flex-wrap items-center">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r to-lime-400 from-sky-400">Presiona el botón</span>
+            <img src="/images/modelviewer-icon.webp" alt="Ícono de ModelViewer" class="w-10 h-10">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-sky-400">para ver la experiencia AR</span>
+        </div>
+    </main>
+</Layout>
+
+<style>
+
+</style>

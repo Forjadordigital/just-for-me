@@ -1,4 +1,7 @@
 ---
+import '@fontsource/anton-sc';
+// Supports weights 200-800
+import '@fontsource-variable/manrope';
 interface Props {
 	title: string;
 }
@@ -7,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Just for me" />
@@ -36,15 +39,14 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	body{
+		min-height: 100vh;
+		font-family: 'Manrope Variable', sans-serif;
 	}
+	
+	.font-golda{
+  		font-family: 'Anton SC', sans-serif;
+	}
+
+
 </style>
